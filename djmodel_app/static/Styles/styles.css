@@ -1,0 +1,124 @@
+﻿/* --------------------  Boxed notifications -------------------- */
+
+.notification {
+	display: block;
+	padding: 10px 10px 10px ;
+	border: 1px solid;
+	/*margin-bottom: 20px;*/
+	background-repeat: no-repeat;
+	background-position: 20px 20px;
+    text-align:center;
+    border-radius:5px;
+	}
+
+.n-success {
+	background-color: #a3e6bd;
+	border-color: #68d59b;
+	background-image: url(../images/notification-tick.gif);
+	}
+
+.n-information {
+	background-color: #9fddea;
+	border-color: #5fceea;
+	background-image: url(../images/notification-information.gif);
+	}
+
+.n-attention {
+	background-color: #f9e497;
+	border-color: #ffcb4f;
+	background-image: url(../images/notification-exclamation.gif);
+	}
+
+.n-error {
+        content: "\f12a";
+        font-size: 16px;
+        color: #c80000;
+        display: block;
+        background-color:white;
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+        transform: translateY(-50%);
+  
+	
+	}
+       
+/* Lock Screen-related CSS Classes */
+.LockOff
+{
+   visibility: hidden;
+   display: none;
+   position: absolute;
+   top: -100px;
+   left: -100px;
+}
+.LockBackground
+{
+   height: 200%;
+   position: absolute;
+   top: 0px;
+   left: 0px;
+   visibility: visible;
+   display: block;
+   width: 100%;
+   height: 100%;
+   background-color: #fff;
+   z-index: 999;
+   filter: alpha(opacity=75);
+   opacity: 0.75;
+   padding-top: 20%;
+}
+
+.LockPane
+{
+   z-index: 1000;
+   position: absolute;
+   top: 0px;
+   left: 0px;
+   padding-top: 25%;
+   visibility: visible;
+   display: block;
+   text-align: center;
+   border-radius: 10px;
+   width: 100%;
+}
+
+
+.StatusMessage
+{
+    color: Red;
+    font-size: 2.0em;
+    font-weight: bold;
+}
+
+
+/*----------------------- Progress Bar -----------------------*/
+
+.w3-progress-container
+{
+    width: 100%;
+    height: 1.5em;
+    position: relative;
+    background-color: #f1f1f1;
+    border: 3px solid #ddd;
+}
+.w3-progressbar
+{
+    background-color: #757575;
+    height: 100%;
+    position: absolute;
+    line-height: inherit;
+}
+
+.w3-green, .w3-hover-green:hover
+{
+    color: #fff !important;
+    background-color: #4CAF50 !important;
+}
+
+.percentClass
+{
+    font-size: 12px;
+    padding: 45px;
+}

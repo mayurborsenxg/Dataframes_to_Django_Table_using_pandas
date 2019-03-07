@@ -1,0 +1,700 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<!-- BEGIN HEAD -->
+
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<meta content="width=device-width, initial-scale=1" name="viewport" />
+	<meta name="description" content="Responsive Hostel Template" />
+	<meta name="author" content="SmartHostel" />
+	<title>Smart Hostel</title>
+	<!-- google font -->
+	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet" type="text/css" />
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet"/>
+	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css"/>
+    
+
+	<!-- icons -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css" rel="stylesheet" type="text/css" />
+	<link href="fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+	<link href="fonts/material-design-icons/material-icon.css" rel="stylesheet" type="text/css" />
+	<!--bootstrap -->
+    <link href="./assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+	
+	<!-- Material Design Lite CSS -->
+	<link rel="stylesheet" href="./assets/plugins/material/material.min.css"/>
+	<link rel="stylesheet" href="./assets/css/material_style.css"/>
+	<!-- Theme Styles -->
+	<link href="./assets/css/theme/light/theme_style.css" rel="stylesheet" id="rt_style_components" type="text/css" />
+	<link href="./assets/css/plugins.min.css" rel="stylesheet" type="text/css" />
+	<link href="./assets/css/theme/light/style.css" rel="stylesheet" type="text/css" />
+	<link href="./assets/css/responsive.css" rel="stylesheet" type="text/css" />
+	<link href="./assets/css/theme/light/theme-color.css" rel="stylesheet" type="text/css" />
+
+
+     <link href="./assets/plugins/datatables/plugins/bootstrap/dataTables.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+    <link href="./assets/plugins/dropzone/dropzone.css" rel="stylesheet" media="screen"/>
+<!-- Date Time item CSS -->
+<link rel="stylesheet" href="./assets/plugins/material-datetimepicker/bootstrap-material-datetimepicker.css" />
+    <style>
+        .btn-info {
+    background-color: #512f50 !important;
+    border: 1px solid #512f50 !important;
+    color: #fff !important;
+}
+        .card-topline-aqua {
+    border-top: 3px solid #512f50;
+}
+        .page-header.navbar .page-logo {
+    float: left;
+    display: block;
+    width: 235px;
+    height: 60px;
+    padding: 10px 20px 0px 30px;
+    background: #512f50;
+}
+        .page-logo a {
+    text-decoration: none;
+    color: #fdb51a;
+    font-size: 25px;
+}
+        .white-sidebar-color .sidemenu-container .sidemenu>li.active.open>a, .white-sidebar-color .sidemenu-container .sidemenu>li.active>a, .white-sidebar-color .sidemenu-closed.sidemenu-container-fixed .sidemenu-container:hover .sidemenu>li.active.open>a, .white-sidebar-color .sidemenu-closed.sidemenu-container-fixed .sidemenu-container:hover .sidemenu>li.active>a {
+    background-color: #F4F6F9;
+    border-top-color: transparent;
+    color: #512f50;
+}
+        .white-sidebar-color .sidemenu-container .sidemenu>li.active>a>i{
+            color: #381f38;
+        }
+        .logo-indigo .page-header.navbar .page-logo {
+    background: #512f50;
+}
+        .white-sidebar-color .sidemenu-container .sidemenu>li:hover>a{
+            color: #512f50;
+        }
+        .white-sidebar-color .sidemenu-container .sidemenu>li:hover>a>i{
+            color: #512f50;
+        }
+        .page-item.active .page-link {
+    z-index: 1;
+    color: #fff;
+    background-color: #512f50;
+    border-color: #512f50;
+}
+        .page-footer {
+    padding: 20px 5px;
+    font-size: 13px;
+    background-color: #512f50;
+}
+        a {
+    text-shadow: none;
+    color: #fdb51a;
+}
+        .scroll-to-top {
+            padding: 11px;
+            border-radius: 4px;
+            background: #fdb51a;
+        }
+            .scroll-to-top > i {
+                display: inline-block;
+                color: #512f50;
+            }
+            .btn-danger {
+    background-color: #fdb51a !important;
+    border: 1px solid #fdb51a !important;
+    color: #fff !important;
+}
+            .btn-danger:hover{
+    background-color: #fdb51a !important;
+    border: 1px solid #fdb51a !important;
+    color: #fff !important;
+}
+            .btn-info:active, .btn-info:focus, .btn-info:hover{
+    background-color: #512f50 !important;
+    border: 1px solid #512f50 !important;
+    color: #fff !important;
+}
+
+            .headerBadgeColor1 {
+    background-color: #512f50;
+}
+            .headerBadgeColor2 {
+    background-color: #fdb51a;
+}
+    </style>
+</head>
+<!-- END HEAD -->
+
+<body class="page-header-fixed sidemenu-closed-hidelogo page-content-white page-md header-white white-sidebar-color logo-indigo">
+	<div class="page-wrapper">
+		<!-- start header -->
+		<div class="page-header navbar navbar-fixed-top">
+			<div class="page-header-inner ">
+				<!-- logo start -->
+				<div class="page-logo">
+					<a href="index.html">
+						<span class="logo-icon material-icons fa-rotate-45">school</span>
+						<span class="logo-default">TEST</span> </a>
+				</div>
+				<!-- logo end -->
+				<ul class="nav navbar-nav navbar-left in">
+					<li><a href="#" class="menu-toggler sidebar-toggler"><i class="icon-menu"></i></a></li>
+				</ul>
+				<form class="search-form-opened" action="#" method="GET">
+					<div class="input-group">
+						<input type="text" class="form-control" placeholder="Search..." name="query">
+						<span class="input-group-btn">
+							<a href="javascript:;" class="btn submit">
+								<i class="icon-magnifier"></i>
+							</a>
+						</span>
+					</div>
+				</form>
+				<!-- start mobile menu -->
+				<a href="javascript:;" class="menu-toggler responsive-toggler" data-toggle="collapse" data-target=".navbar-collapse">
+					<span></span>
+				</a>
+				<!-- end mobile menu -->
+				<!-- start header menu -->
+				<div class="top-menu">
+					<ul class="nav navbar-nav pull-right">
+						<li><a href="javascript:;" class="fullscreen-btn"><i class="fa fa-arrows-alt"></i></a></li>
+						
+						<!-- start notification dropdown -->
+						<li class="dropdown dropdown-extended dropdown-notification" id="header_notification_bar">
+							<a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+								<i class="fa fa-bell-o"></i>
+								<span class="badge headerBadgeColor1"> 6 </span>
+							</a>
+							<ul class="dropdown-menu">
+								<li class="external">
+									<h3><span class="bold">Notifications</span></h3>
+									<span class="notification-label purple-bgcolor">New 6</span>
+								</li>
+								<li>
+									<ul class="dropdown-menu-list small-slimscroll-style" data-handle-color="#637283">
+										<li>
+											<a href="javascript:;">
+												<span class="time">just now</span>
+												<span class="details">
+													<span class="notification-icon circle deepPink-bgcolor"><i class="fa fa-check"></i></span>
+													Congratulations!. </span>
+											</a>
+										</li>
+										<li>
+											<a href="javascript:;">
+												<span class="time">3 mins</span>
+												<span class="details">
+													<span class="notification-icon circle purple-bgcolor"><i class="fa fa-user o"></i></span>
+													<b>John Micle </b>is now following you. </span>
+											</a>
+										</li>
+										<li>
+											<a href="javascript:;">
+												<span class="time">7 mins</span>
+												<span class="details">
+													<span class="notification-icon circle blue-bgcolor"><i class="fa fa-comments-o"></i></span>
+													<b>Sneha Jogi </b>sent you a message. </span>
+											</a>
+										</li>
+										<li>
+											<a href="javascript:;">
+												<span class="time">12 mins</span>
+												<span class="details">
+													<span class="notification-icon circle pink"><i class="fa fa-heart"></i></span>
+													<b>Ravi Patel </b>like your photo. </span>
+											</a>
+										</li>
+										<li>
+											<a href="javascript:;">
+												<span class="time">15 mins</span>
+												<span class="details">
+													<span class="notification-icon circle yellow"><i class="fa fa-warning"></i></span> Warning! </span>
+											</a>
+										</li>
+										<li>
+											<a href="javascript:;">
+												<span class="time">10 hrs</span>
+												<span class="details">
+													<span class="notification-icon circle red"><i class="fa fa-times"></i></span> Application error. </span>
+											</a>
+										</li>
+									</ul>
+									<div class="dropdown-menu-footer">
+										<a href="javascript:void(0)"> All notifications </a>
+									</div>
+								</li>
+							</ul>
+						</li>
+						<!-- end notification dropdown -->
+						<!-- start message dropdown -->
+						<li class="dropdown dropdown-extended dropdown-inbox" id="header_inbox_bar">
+							<a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+								<i class="fa fa-envelope-o"></i>
+								<span class="badge headerBadgeColor2"> 2 </span>
+							</a>
+							<ul class="dropdown-menu">
+								<li class="external">
+									<h3><span class="bold">Messages</span></h3>
+									<span class="notification-label cyan-bgcolor">New 2</span>
+								</li>
+								<li>
+									<ul class="dropdown-menu-list small-slimscroll-style" data-handle-color="#637283">
+										<li>
+											<a href="#">
+												<span class="photo">
+													<img src="./assets/img/prof/prof2.jpg" class="img-circle" alt=""> </span>
+												<span class="subject">
+													<span class="from"> Sarah Smith </span>
+													<span class="time">Just Now </span>
+												</span>
+												<span class="message"> Jatin I found you on LinkedIn... </span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<span class="photo">
+													<img src="./assets/img/prof/prof3.jpg" class="img-circle" alt=""> </span>
+												<span class="subject">
+													<span class="from"> John Deo </span>
+													<span class="time">16 mins </span>
+												</span>
+												<span class="message"> Fwd: Important Notice Regarding Your Domain Name... </span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<span class="photo">
+													<img src="./assets/img/prof/prof1.jpg" class="img-circle" alt=""> </span>
+												<span class="subject">
+													<span class="from"> Rajesh </span>
+													<span class="time">2 hrs </span>
+												</span>
+												<span class="message"> pls take a print of attachments. </span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<span class="photo">
+													<img src="./assets/img/prof/prof8.jpg" class="img-circle" alt=""> </span>
+												<span class="subject">
+													<span class="from"> Lina Smith </span>
+													<span class="time">40 mins </span>
+												</span>
+												<span class="message"> Apply for Ortho Surgeon </span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<span class="photo">
+													<img src="./assets/img/prof/prof5.jpg" class="img-circle" alt=""> </span>
+												<span class="subject">
+													<span class="from"> Jacob Ryan </span>
+													<span class="time">46 mins </span>
+												</span>
+												<span class="message"> Request for leave application. </span>
+											</a>
+										</li>
+									</ul>
+									<div class="dropdown-menu-footer">
+										<a href="#"> All Messages </a>
+									</div>
+								</li>
+							</ul>
+						</li>
+						<!-- end message dropdown -->
+						<!-- start manage user dropdown -->
+						<li class="dropdown dropdown-user">
+							<a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+								<img alt="" class="img-circle " src="./assets/img/dp.jpg" />
+								<span class="username username-hide-on-mobile"> Kiran </span>
+								<i class="fa fa-angle-down"></i>
+							</a>
+							<ul class="dropdown-menu dropdown-menu-default">
+								<li>
+									<a href="#">
+										<i class="icon-user"></i> Profile </a>
+								</li>
+								<li>
+									<a href="#">
+										<i class="icon-settings"></i> Hostel Form
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<i class="icon-logout"></i> Log Out </a>
+								</li>
+							</ul>
+						</li>
+						<!-- end manage user dropdown -->
+						
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- end header -->
+		
+		<!-- start page container -->
+		<div class="page-container">
+			<!-- start sidebar menu -->
+			<div class="sidebar-container">
+				<div class="sidemenu-container navbar-collapse collapse fixed-menu">
+					<div id="remove-scroll" class="left-sidemenu">
+						<ul class="sidemenu  page-header-fixed slimscroll-style" data-keep-expanded="false" data-auto-scroll="true"
+						 data-slide-speed="200" style="padding-top: 20px">
+							<li class="sidebar-toggler-wrapper hide">
+								<div class="sidebar-toggler">
+									<span></span>
+								</div>
+							</li>
+							<li class="sidebar-user-panel">
+								<div class="user-panel">
+									<div class="pull-left image">
+										<img src="./assets/img/dp.jpg" class="img-circle user-img-circle" alt="User Image" />
+									</div>
+									<div class="pull-left info">
+										<p> Kiran Patel</p>
+										<a href="#"><i class="fa fa-circle user-online"></i><span class="txtOnline"> Online</span></a>
+									</div>
+								</div>
+							</li>
+							<li class="nav-item start active open">
+								<a href="index.html" class="nav-link nav-toggle">
+									<i class="material-icons">dashboard</i>
+									<span class="title">Dashboard</span>
+									<span class="selected"></span>
+									
+								</a>
+								
+							</li>
+							<li class="nav-item">
+								<a href="table.html" class="nav-link nav-toggle"> <i class="material-icons">event</i>
+									<span class="title">Topup Management</span>
+								</a>
+							</li>
+							<li class="nav-item">
+								<a href="#" class="nav-link nav-toggle"> <img id="Image5" class="at_img" src="../assets/img/attendance.png" style="height:19px;width:19px;">
+									<span class="title">Attendance Management</span> 
+								</a>
+								
+							</li>
+							<li class="nav-item">
+								<a href="#" class="nav-link nav-toggle"><i class="material-icons">group</i>
+									<span class="title">Leave Management</span></a>
+								
+							</li>
+							<li class="nav-item">
+								<a href="#" class="nav-link nav-toggle"> <i class="material-icons">payment</i>
+									<span class="title">Pay Outstanding</span> 
+									
+								</a>
+								
+							</li>
+							
+						
+							
+							
+
+						
+							
+							
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!-- end sidebar menu -->
+
+            <!-- start page content -->
+			<div class="page-content-wrapper">
+				<div class="page-content">
+                  
+             	<!-- start page content -->
+			
+					<div class="page-bar">
+						<div class="page-title-breadcrumb">
+							<div class=" pull-left">
+								<div class="page-title">Dashboard</div>
+							</div>
+							<ol class="breadcrumb page-breadcrumb pull-right">
+								<li><i class="fa fa-home"></i>&nbsp;<a class="parent-item" href="index.html">Home</a>&nbsp;<i class="fa fa-angle-right"></i>
+								</li>
+								<li class="active">Dashboard</li>
+							</ol>
+						</div>
+					</div>
+					<!-- start widget -->
+					<div class="state-overview">
+						<div class="row">
+							<div class="col-xl-3 col-md-6 col-12">
+								<div class="info-box bg-b-green">
+									<span class="info-box-icon push-bottom"><i style="font-size:24px" class="fa">&#xf156;</i></span>
+									<div class="info-box-content">
+										<span class="info-box-text">Card Balance </span>
+										<span class="info-box-number">13,921</span> <i style="font-size:18px" class="fa">&#xf156;</i><br />
+										<span>&nbsp;</span>
+									
+									</div>
+									<!-- /.info-box-content -->
+								</div>
+								<!-- /.info-box -->
+							</div>
+							<!-- /.col -->
+							<div class="col-xl-3 col-md-6 col-12">
+								<div class="info-box bg-b-yellow">
+									<span class="info-box-icon push-bottom"><i style="font-size:24px" class="fa">&#xf156;</i></span>
+									<div class="info-box-content">
+										<span class="info-box-text">Outstanding Amount</span>
+										<span class="info-box-number">13,921</span> <i style="font-size:18px" class="fa">&#xf156;</i><br />
+										<span>&nbsp;</span>
+									</div>
+									<!-- /.info-box-content -->
+								</div>
+								<!-- /.info-box -->
+							</div>
+							<!-- /.col -->
+							<div class="col-xl-3 col-md-6 col-12">
+								<div class="info-box bg-b-blue">
+									<span class="info-box-icon push-bottom"><i style="font-size:24px" class="fa">&#xf156;</i></span>
+									<div class="info-box-content">
+										<span class="info-box-text">Expences (Dec)</span>
+										<span class="info-box-number">13,921</span> <i style="font-size:18px" class="fa">&#xf156;</i><br />
+										<span>&nbsp;</span>
+									</div>
+									<!-- /.info-box-content -->
+								</div>
+								<!-- /.info-box -->
+							</div>
+							<!-- /.col -->
+							<div class="col-xl-3 col-md-6 col-12">
+								<div class="info-box bg-b-pink">
+									<span class="info-box-icon push-bottom"><i style="font-size:24px" class="fa">&#xf073;</i></span>
+									<div class="info-box-content">
+										<span class="info-box-text">Renewal Date</span>
+										<span class="info-box-number">19/12/2018</span> <i style="font-size:18px" class="fa">&#xf073;</i><br />
+										<span>&nbsp;</span>
+									</div>
+									<!-- /.info-box-content -->
+								</div>
+								<!-- /.info-box -->
+							</div>
+							<!-- /.col -->
+						</div>
+					</div>
+					<!-- end widget -->
+
+				
+					<div class="row">
+						<div class="col-lg-8 col-md-12 col-sm-12 col-12">
+							<div class="card card-box">
+								<div class="card-head">
+									<header>Topup Card Transition</header>
+									<div class="tools">
+										<a class="fa fa-repeat btn-color box-refresh" href="javascript:;"></a>
+										
+									</div>
+								</div>
+								<div class="card-body ">
+									<div class="table-wrap">
+										<div class="table-responsive">
+											<table class="table display product-overview mb-30" id="support_table">
+												<thead>
+													<tr>
+														<th>Sr No</th>
+														<th>Trans ID</th>
+														<th>Trans Date</th>
+														<th>Type</th>
+														<th>Decription</th>
+														<th>Amount</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>1</td>
+														<td>128</td>
+														<td>15/12/2018</td>
+														<td>
+															<span class="label label-sm label-success">Credit</span>
+														</td>
+														<td>
+													      ICICI ATM card payment
+														</td>
+														<td>1280</td>
+													</tr>
+													<tr>
+														<td>2</td>
+														<td>125</td>
+														<td> 12/12/2018</td>
+														<td>
+															<span class="label label-sm label-warning"> Debit </span>
+														</td>
+														<td>
+															Canteen bill payment
+														</td>
+														<td>1280</td>
+													</tr>
+													<tr>
+														<td>4</td>
+														<td>120</td>
+														<td>03/12/2018</td>
+														<td>
+															<span class="label label-sm label-warning"> Debit </span>
+														</td>
+														<td>
+															Canteen bill payment
+														</td>
+														<td>1280</td>
+													</tr>
+													<tr>
+														<td>5</td>
+														<td>119</td>
+														<td>05/12/2018</td>
+														<td>
+															<span class="label label-sm label-warning"> Debit </span>
+														</td>
+														<td>
+															Canteen bill payment
+														
+														</td>
+														<td>1280</td>
+													</tr>
+													<tr>
+														<td>6</td>
+														<td>118</td>
+														<td>03/12/2018</td>
+														<td>
+															<span class="label label-sm label-warning"> Debit </span>
+														</td>
+														<td>
+															Canteen bill payment
+														</td>
+														<td>1280</td>
+													</tr>
+													<tr>
+														<td>7</td>
+														<td>115</td>
+														<td>11/12/2018</td>
+														<td>
+															<span class="label label-sm label-success"> Credit<span>
+														</td>
+														<td>
+															ICICI bank ATM card 
+														</td>
+														<td>1280</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+                        	<div class="col-lg-4 col-md-12 col-sm-12 col-12">
+                                	
+								<div class="info-box " style="margin-top: 12px;background: #c1c1c1;">
+									
+									<div class="info-box-content" style=" margin-left:68px;padding: 40px 20px 0px 17px;">
+										<span class="info-box-text">Food Coupon (Dec)</span>
+										<span class="info-box-number" style=" margin-left:60px;">13</span> <br />
+										<span>&nbsp;</span>
+									</div>
+									<!-- /.info-box-content -->
+								</div>
+								<!-- /.info-box -->
+							
+							<div class="card  card-box">
+								<div class="card-head">
+									<header>Upcoming Events</header>
+									<div class="tools">
+										<a class="fa fa-repeat btn-color box-refresh" href="javascript:;"></a>
+										
+									</div>
+								</div>
+								<div class="card-body no-padding height-9">
+									<div class="row">
+										<div class="noti-information notification-menu">
+											<div class="notification-list mail-list not-list small-slimscroll-style">
+												<a href="javascript:;" class="single-mail">
+												<span>Crismas celebration</span>										
+												</a>
+												<a href="javascript:;" class="single-mail">
+												<span>New year party</span>		
+												</a>
+												<a href="javascript:;" class="single-mail">
+												<span>Parents Metting</span>		
+												</a>
+												<a href="javascript:;" class="single-mail">
+												<span>Picnic</span>		
+												</a>
+												
+											</div>
+											<div class="full-width text-center p-t-10">
+												<button type="button" class="btn purple btn-outline btn-circle margin-0">View All</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+					</div>
+					
+			
+			<!-- end page content -->
+ 
+				</div>
+			</div>
+			<!-- end page content -->
+
+
+			
+		
+		</div>
+		<!-- end page container -->
+		<!-- start footer -->
+		<div class="page-footer">
+			<div class="page-footer-inner"> All Rights Reserved.&copy; 2018
+				<a href="mailto:redstartheme@gmail.com" target="_top" class="makerCss">NXG Labs Pvt. Ltd.</a>
+			</div>
+			<div class="scroll-to-top">
+				<i class="icon-arrow-up"></i>
+			</div>
+		</div>
+		<!-- end footer -->
+	</div>
+	<script src="./assets/plugins/jquery/jquery.min.js"></script>
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js"></script>
+	<script src="./assets/plugins/popper/popper.js"></script>
+	<script src="./assets/plugins/jquery-blockui/jquery.blockui.min.js"></script>
+	<script src="./assets/plugins/jquery-slimscroll/jquery.slimscroll.js"></script>
+	<!-- bootstrap -->
+	<script src="./assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+	<script src="./assets/plugins/bootstrap-switch/js/bootstrap-switch.min.js"></script>
+	<!-- Common js-->
+	<script src="./assets/js/app.js"></script>
+	<script src="./assets/js/layout.js"></script>
+	<script src="./assets/js/theme-color.js"></script>
+	<!-- material -->
+	<script src="./assets/plugins/material/material.min.js"></script>
+	
+    <!-- Material -->
+<script src="./assets/plugins/material/material.min.js"></script>
+<script src="./assets/js/pages/material-select/getmdl-select.js"></script>
+<script src="./assets/plugins/material-datetimepicker/moment-with-locales.min.js"></script>
+<script src="./assets/plugins/material-datetimepicker/bootstrap-material-datetimepicker.js"></script>
+<script src="./assets/plugins/material-datetimepicker/datetimepicker.js"></script>
+
+    <!-- data tables -->
+	<script src="./assets/plugins/datatables/jquery.dataTables.min.js"></script>
+	<script src="./assets/plugins/datatables/plugins/bootstrap/dataTables.bootstrap4.min.js"></script>
+	<script src="./assets/js/pages/table/table_data.js"></script>
+<!-- dropzone -->
+<script src="./assets/plugins/dropzone/dropzone.js"></script>
+<script src="./assets/plugins/dropzone/dropzone-call.js"></script>
+
+</body>
+
+</html>

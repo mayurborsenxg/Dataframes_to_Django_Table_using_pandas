@@ -1,0 +1,13 @@
+D:\Projects\HostelErpSoftware\HostelErpSoftware\HostelErpSoftware\bin\HostelErpSoftware.dll.config
+D:\Projects\HostelErpSoftware\HostelErpSoftware\HostelErpSoftware\bin\HostelErpSoftware.dll
+D:\Projects\HostelErpSoftware\HostelErpSoftware\HostelErpSoftware\bin\HostelErpSoftware.pdb
+D:\Projects\HostelErpSoftware\HostelErpSoftware\HostelErpSoftware\obj\Debug\HostelErpSoftware.csprojResolveAssemblyReference.cache
+D:\Projects\HostelErpSoftware\HostelErpSoftware\HostelErpSoftware\obj\Debug\HostelErpSoftware.dll
+D:\Projects\HostelErpSoftware\HostelErpSoftware\HostelErpSoftware\obj\Debug\HostelErpSoftware.pdb
+D:\Projects\HostelErpSoftware\HostelErpSoftware\HostelErpSoftware\bin\AjaxControlToolkit.dll
+C:\Users\admin\Documents\hostel project\HostelErpSoftware\HostelErpSoftware\HostelErpSoftware\bin\HostelErpSoftware.dll.config
+C:\Users\admin\Documents\hostel project\HostelErpSoftware\HostelErpSoftware\HostelErpSoftware\bin\HostelErpSoftware.dll
+C:\Users\admin\Documents\hostel project\HostelErpSoftware\HostelErpSoftware\HostelErpSoftware\bin\HostelErpSoftware.pdb
+C:\Users\admin\Documents\hostel project\HostelErpSoftware\HostelErpSoftware\HostelErpSoftware\obj\Debug\HostelErpSoftware.csprojResolveAssemblyReference.cache
+C:\Users\admin\Documents\hostel project\HostelErpSoftware\HostelErpSoftware\HostelErpSoftware\obj\Debug\HostelErpSoftware.dll
+C:\Users\admin\Documents\hostel project\HostelErpSoftware\HostelErpSoftware\HostelErpSoftware\obj\Debug\HostelErpSoftware.pdb
